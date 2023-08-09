@@ -1,6 +1,6 @@
 ## React Redux Product Cart
 
-### Maximum Marks: 16
+<!-- ### Maximum Marks: 16
 
 ```
 ✅ Able to make submission: - 1 Mark
@@ -40,7 +40,7 @@ npm run server
 
 1. Make sure that the json-server is up and running at port 8080
 2. There is a .env file. Include `REACT_APP_JSON_SERVER_PORT=8080` in it
-3. Use `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}` as the json-server base url
+3. Use `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}` as the json-server base url -->
 
 ## Folder Structure (Important Files)
 
@@ -74,7 +74,7 @@ npm run server
 └── App.js
 ```
 
-## Problem Statement
+<!-- ## Problem Statement
 
 Create a product-cart page where user can see list of products and add it to cart. Use redux store as your cart.
 They can sort the products based on the discount provided.
@@ -134,28 +134,28 @@ They can sort the products based on the discount provided.
 * For example `Title: "iPhone"` or `Discount: 10.5%` will not work *
 ```
 
-- If user adds something to the cart, update the `cartReducer` store accordingly
+- If user adds something to the cart, update the `cartReducer` store accordingly -->
 
-**Initially the order of products should not be in increasing or decreasing order**
+<!-- **Initially the order of products should not be in increasing or decreasing order** -->
 
 <img width="1715" alt="Screenshot 2023-03-11 at 12 04 17 AM" src="https://user-images.githubusercontent.com/74458714/224397940-9b2ebbb7-2d57-4a20-b1db-fc0fb024f829.png">
 
-### Authentication
+<!-- ### Authentication
 
 - Use `reqres.in` for login functionality
 - Complete the `login` page.
 - On successfull login update the redux store accordingly with isAuth and token.
-- If the user is not authenticated and tries to visit `/cart`, redirect him to `login` page
+- If the user is not authenticated and tries to visit `/cart`, redirect him to `login` page -->
 
 <img width="1722" alt="Screenshot 2023-03-11 at 12 04 27 AM" src="https://user-images.githubusercontent.com/74458714/224397996-71c3de39-ebe7-4b26-a3a6-350b8d2ecffd.png">
 
 ### CartPage
 
-- User can only visit cart page if he is logged in.
+<!-- - User can only visit cart page if he is logged in.
 - Show the items added to the cart store here in grid format
 - All the items will be displayed within div with `data-testid = "cart-list`
-- The product card will have class `product-card` with following constraints:-
-
+- The product card will have class `product-card` with following constraints:- -->
+<!-- 
 ```
 - Show image in image tag with class `product-image`
 - Show title with class `product-title`
@@ -164,11 +164,11 @@ They can sort the products based on the discount provided.
 - Show discount in p tag with class `product-discount`
 * Do not add any extra text, only response values should be present *
 * For example `Title: "iPhone"` or `Discount: 10.5%` will not work *
-```
+``` -->
 
 <img width="1724" alt="Screenshot 2023-03-11 at 12 05 43 AM" src="https://user-images.githubusercontent.com/74458714/224398051-df2ee4d3-9ba2-420c-9782-e7a6000ceb3c.png">
 
-### Sorting (Bonus)
+<!-- ### Sorting (Bonus)
 
 **Sidebar UI is provided you have to write the logic**
 
@@ -187,4 +187,4 @@ They can sort the products based on the discount provided.
 ### General guidelines
 
 - The system on cp.masaischool.com may take between 1-20 minutes for responding
-- So we request you to read the problem carefully and debug before itself.
+- So we request you to read the problem carefully and debug before itself. -->
