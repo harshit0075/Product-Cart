@@ -1,16 +1,33 @@
+import { useState } from "react";
 import styled from "styled-components";
-
+import {useDispatch} from "react-redux"
+import {useNavigate} from "react-router-dom"
+import {login} from '../Redux/AuthReducer/action'
 export const Login = () => {
+  const [email,setEmail]=useState("")
+  const[password,setPassword]=useState("")
+  const dispatch=useDispatch()
+  const navigate=useNavigate()
+  const handleLogin=()=>{
+      const userData={
+        email,
+        password
+      }
+      dispatch(login(userData))
+     navigate('/')
+  }
+ 
   return (
     <DIV>
       <h2>Log In</h2>
-      <input data-testid="user-email" type="email" placeholder="Email" />
+      <input data-testid="user-email" type="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
       <input
         data-testid="user-password"
         type="password"
         placeholder="Password"
+        value={password} onChange={(e)=>setPassword(e.target.value)}
       />
-      <button data-testid="user-login">Log In</button>
+      <button onClick={handleLogin} data-testid="user-login">Log In</button>
     </DIV>
   );
 };
